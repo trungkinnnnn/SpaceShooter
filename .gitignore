@@ -1,0 +1,25 @@
+
+# ==== Unity Folder to Ingnore ==== 
+[Ll]ibrary/
+[Ll]ogs/
+[Oo]bj/
+[Tt]emp/
+[Uu]serSettings/
+[Bb]uild/
+[Bb]uilds/
+
+# ==== VS ====
+.vs
+.vsconfig
+*.csproj
+*.sln
+.collabignore
+
+# ==== Others ====
+*.apk
+*.aab
+*.bak
+*.swp
+*.tmp
+*.log
+
