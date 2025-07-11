@@ -6,6 +6,7 @@ public class PlayerHealth : Health
 {
     protected override void Die()
     {
+        UiManager.instance.ShowPanelGameOver();
         base.Die();
     }
 }
