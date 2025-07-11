@@ -20,7 +20,7 @@ public class PlayerShooting : MonoBehaviour
     private void Shooting()
     {
         Vector3 bulletPosition = transform.position;
-        bulletPosition.y = bulletPosition.y + 0.5f;
+        bulletPosition.y = bulletPosition.y + 1f;
         Instantiate(bulletPrefab, bulletPosition, transform.rotation);
     }
 }

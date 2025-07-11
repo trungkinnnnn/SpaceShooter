@@ -1,10 +1,13 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
     public float flySpeed = 5f;
+    public int damge;
+
+    [SerializeField] GameObject EffectBulletHit;
 
     void Update()
     {
@@ -20,6 +23,21 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var enemy = collision.GetComponent<EnemyHealth>();
+        if (enemy)
+        {
+            enemy.TakeDamge(damge);
+
+            // Hiệu ứng trúng đạn
+            var effectHitBullet = Instantiate(EffectBulletHit, transform.position, transform.rotation);
+            Destroy(effectHitBullet, 0.5f);
+
+            Destroy(gameObject);
+        }
+    }
+
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4383771018616396551}
   - component: {fileID: -777539131746425739}
   - component: {fileID: 194206525}
+  - component: {fileID: 42247525}
   m_Layer: 7
   m_Name: EnemyShipBasic
   m_TagString: Untagged
@@ -147,3 +148,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EffectDestroy: {fileID: 5883346519395866975, guid: d6b5ca5c0153aea45a0335c8c582dc36, type: 3}
+  defaulHealthPoint: 5
+--- !u!114 &42247525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794928505277047224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad9dc8d525325e48a757f65c17c9d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 194206525}
+  damage: 1

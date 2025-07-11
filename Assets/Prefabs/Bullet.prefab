@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2554996964816112142}
   m_Layer: 8
   m_Name: Bullet
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flySpeed: 5
+  damge: 1
+  EffectBulletHit: {fileID: 1399760887840091015, guid: 27ea4f02f31893644879c8d80ce15c35, type: 3}
 --- !u!61 &1660004644
 BoxCollider2D:
   m_ObjectHideFlags: 0
