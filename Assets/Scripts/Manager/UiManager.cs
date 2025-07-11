@@ -12,6 +12,7 @@ public class UiManager : MonoBehaviour
     {
         if (instance == null) instance = this;
         else Destroy(gameObject);
+       
     }
 
     public void ShowPanelGameOver() => gameOverPanel.SetActive(true);

@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
 
     public int defaulHealthPoint;
     private int healthPoint;
-
+    public System.Action onDead;
 
     private void Start()
     {
@@ -31,5 +31,6 @@ public class Health : MonoBehaviour
         var explosion = Instantiate(EffectDestroy, transform.position, transform.rotation);
         Destroy(explosion, 1);
         Destroy(gameObject);
+        onDead?.Invoke();
     }
 }
