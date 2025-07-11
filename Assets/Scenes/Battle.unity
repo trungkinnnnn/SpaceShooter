@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 1521398137}
   - component: {fileID: 1521398136}
   - component: {fileID: 1521398138}
+  - component: {fileID: 1521398139}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -360,8 +361,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -51004653
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2023126844081633735, guid: 4faf0fca4fbdd44428b31f090e6584f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -402,3 +403,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb91c53c790ec7408b2e46c92482472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1521398139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521398135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be264ba8a80b3443a7c2d9afb8916cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4883649610068716730, guid: e7d334c7ba5e3e54cb7945a1a3a303ea, type: 3}
+  delayShooting: 0.2
+  lastTimeShooting: 0

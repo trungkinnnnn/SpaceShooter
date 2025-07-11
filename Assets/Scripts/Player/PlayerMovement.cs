@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Tốc độ di chuyển
+    //Tốc độ di chuyển
     private float maginX = 0.5f, maginY = 0.5f;
     private float smoothSpeed = 10f;
 
@@ -40,4 +41,42 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, currentTilt, 0f);
 
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
