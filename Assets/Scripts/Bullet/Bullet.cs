@@ -15,11 +15,11 @@ public class Bullet : MonoBehaviour
         var min = Camera.main.ViewportToWorldPoint(new Vector3(0, 0));
         var max = Camera.main.ViewportToWorldPoint(new Vector3(1, 1));
 
-        if(transform.position.y > max.y + 0.5f)
+        if(newPostion.x < min.x - 0.5f || newPostion.x > max.x + 0.5f
+            || newPostion.y < min.y - 0.5f || newPostion.y > max.y + 0.5)
         {
             Destroy(gameObject);
         }
-
 
     }
 }
