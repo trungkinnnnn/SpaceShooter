@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerHealth : Health
 {
+    private void Awake()
+    {
+        healthPoint = defaulHealthPoint;
+    }
     protected override void Die()
     {
         base.Die();

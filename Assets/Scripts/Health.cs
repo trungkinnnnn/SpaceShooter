@@ -7,12 +7,14 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject EffectDestroy;
 
     public int defaulHealthPoint;
-    private int healthPoint;
+    public int healthPoint;
+
     public System.Action onDead;
+    public System.Action onHealthChanged;
 
     private void Start()
     {
-        healthPoint = defaulHealthPoint;
+        onHealthChanged?.Invoke();
     }
 
 
@@ -21,6 +23,7 @@ public class Health : MonoBehaviour
         if(healthPoint <= 0) return;
 
         healthPoint -= damge;
+        onHealthChanged.Invoke();
 
         if(healthPoint <= 0) Die();
     }    

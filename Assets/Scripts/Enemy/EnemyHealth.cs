@@ -6,7 +6,11 @@ public class EnemyHealth : Health
 {
     public static int enemyLiving;
 
-    private void Awake() => enemyLiving += 1;
+    private void Awake()
+    {
+        enemyLiving += 1;
+        healthPoint = defaulHealthPoint;
+    }    
 
     protected override void Die()
     {

@@ -7,7 +7,7 @@ public class BattleFlow : MonoBehaviour
     [SerializeField] GameObject panelGameOver;
     [SerializeField] GameObject panelGameWin;
 
-    [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] PlayerHealth playerHealth;
     [SerializeField] GameObject backGroundMusic;
 
     private void Start()

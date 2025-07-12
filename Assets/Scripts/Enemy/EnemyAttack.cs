@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] private EnemyHealth health;
+    [SerializeField] EnemyHealth health;
     public int damage;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -14,7 +14,7 @@ public class EnemyAttack : MonoBehaviour
         if (playerShip == null ) return;
 
         playerShip.TakeDamge(damage);
-        health.TakeDamge(1000);
+        health.TakeDamge(1);
     }
 
 }
